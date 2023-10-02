@@ -32,6 +32,7 @@ header {
     align-items: flex-end;
     position: sticky;
     top: 0px;
+    z-index: 20;
 }
 header h1 {
     text-align:center;
@@ -45,10 +46,14 @@ header h1 {
     display: flex;
 }
 .navBar li a {
+    font-family:'Poppins',cursive sans-serif ;
     text-decoration: none;
     color: black;
     margin-right: .9375rem;
     font-size: 1.25rem;
+}
+.navBar li a:hover{
+    color: white;
 }
 .logo{
     width: 6.25rem;
@@ -150,26 +155,6 @@ main h1 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CONSULTAS EJ DE PREGUNTAS */
 .grids-2{
     display: grid;
@@ -187,13 +172,17 @@ main h1 {
     grid-column-end:9;
     grid-row-start: 2;
     grid-row-end: 3;
-    
 }
+
 .borde h2 p{
     color:black;
     font-family: 'Poppins',sans-serif;
     text-align: left;
-
+}
+.borde h2 p::after{
+    content: ¨ hola¨;
+    color: black;
+    background-color: bisque;
 }
 
 .borde-2{
@@ -278,7 +267,7 @@ main h1 {
 
 .formulario{
     border: 2px solid;
-    background-color: aquamarine;
+    background-color:rgb(244, 244, 194);
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 10;
@@ -302,12 +291,17 @@ main h1 {
     background-color: black;
 }
 .contenedorHombre button{
+    filter: sepia(1);
     height: 12.5rem;
     background-image:url("../assets/img/parker-burchfield-tvG4WvjgsEY-unsplash.jpg");
     width: 99%;
     background-size: contain;
     margin: .625rem
 }
+.contenedorHombre button:hover{
+    filter: sepia(0);
+}
+
 
 .contenedorMujer a{
     text-decoration: none;
@@ -321,7 +315,12 @@ main h1 {
     width: 99%;
     background-size: contain;
     margin: .625rem;
+    filter: sepia(1);
 }
+.contenedorMujer button:hover{
+    filter: sepia(0);
+}
+
 
 .contenedorNiño a{
     text-decoration: none;
@@ -335,7 +334,13 @@ main h1 {
     background-size: contain;
     height: 12.5rem;
     margin: .625rem;
+    filter: sepia(1);
 }
+.contenedorNiño button:hover{
+    filter: sepia(0);
+}
+
+
 
 .container-cards{
     display: flex;
