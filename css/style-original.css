@@ -432,6 +432,7 @@ footer{
 @media (max-width: 320px){
     main{
         height: 53.125rem;
+        
     }
     footer{
         gap: .625rem;
@@ -441,6 +442,21 @@ footer{
     }
     .formulario{
         grid-row-end: 11;
+    }
+    .container-cards{
+        flex-wrap: wrap;
+        height: 7.5rem;
+        width: 100%;
+        gap: .625rem;
+        align-items: center;
+    }
+    .cards{
+        height: 100%;
+        width: 6.25rem;
+    }
+    .cards img{
+        width: 100%;
+        height: 60%;
     }
 }            
 

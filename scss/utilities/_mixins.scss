@@ -1,0 +1,21 @@
+@mixin flex{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+@mixin grids{
+    display: grid;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows: 1fr 1fr 0fr;
+    grid-template-areas: 
+    "section-1 section-2 section-2 section-2 section-2 section-2"
+    "section-1 section-2 section-2 section-2 section-2 section-2"
+    "section-1 section-3 section-3 section-3 section-3 section-3";
+    column-gap: .9375rem; 
+}
+
+@mixin grids2{
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(12,1fr);
+}

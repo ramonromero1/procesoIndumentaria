@@ -1,3 +1,313 @@
+@charset "UTF-8";
+header {
+  background-color: rgb(231, 217, 136);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px;
+  align-items: flex-end;
+  position: sticky;
+  top: 0px;
+  z-index: 20;
+}
+header h1 {
+  text-align: center;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.125rem;
+}
+header .navBar {
+  list-style: none;
+  text-align: right;
+  display: flex;
+}
+header .navBar li a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+  margin-right: 0.9375rem;
+  font-size: 1.25rem;
+}
+header .navBar li a:hover {
+  color: white;
+}
+header .logo {
+  width: 6.25rem;
+}
+header .logo img {
+  width: 100%;
+}
 
+main {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+main h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.875rem;
+}
+main .botonWhats {
+  box-shadow: 0.3125rem 0.3125rem 0.625rem green;
+  position: fixed;
+  right: 0rem;
+  bottom: 0.625rem;
+}
+main .igBoton {
+  box-shadow: 0.3125rem 0.3125rem 0.625rem violet;
+  position: fixed;
+  left: 0rem;
+  bottom: 0.625rem;
+}
+main .grids {
+  padding-bottom: 0.125rem;
+  padding-top: 0.125rem;
+  display: grid;
+  width: 100%;
+  height: 43.75rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 0fr;
+  grid-template-areas: "section-1 section-2 section-2 section-2 section-2 section-2" "section-1 section-2 section-2 section-2 section-2 section-2" "section-1 section-3 section-3 section-3 section-3 section-3";
+  /*justify-items: center; elementos horizontal*/
+  /* align-items: center; elementos vertical*/
+  column-gap: 0.9375rem;
+}
+main .grids .section-1 {
+  background-color: rgba(234, 241, 173, 0.8588235294);
+  grid-area: section-1;
+  gap: 0.3125rem;
+}
+main .grids .section-1 img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+main .grids .letra {
+  text-decoration: solid;
+  font-size: 0.9375rem;
+  font-family: "Poppins", sans-serif;
+}
+main .grids .section-2 {
+  background-color: rgba(234, 241, 173, 0.8588235294);
+  grid-area: section-2;
+  width: 100%;
+  height: 100%;
+}
+main .grids .section-2 h2 {
+  font-family: "Poppins", sans-serif;
+}
+main .grids .formasPago {
+  font-family: "Poppins", sans-serif;
+}
+main .grids .section-3 {
+  background-color: rgba(234, 241, 173, 0.8588235294);
+  grid-area: section-3;
+  width: 100%;
+}
+main .grids .section-3 h2 {
+  font-family: "Poppins", sans-serif;
+}
+main .grids .section-3 h2 div {
+  width: 100%;
+  height: 100%;
+}
+main .grids-2 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+main .grids-2 .border {
+  border: 2px solid;
+  margin: 0.625rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+main .grids-2 .border h2 p {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+main .grids-2 .borde-2 {
+  border: 2px solid;
+  margin: 0.625rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+main .grids-2 .borde-3 {
+  border: 2px solid;
+  margin: 0.625rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+main .grids-2 .borde-4 {
+  border: 2px solid;
+  margin: 0.625rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+main .grids-2 .borde-5 {
+  border: 2px solid;
+  margin: 0.625rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+main .grids-2 .borde-6 {
+  border: 2px solid;
+  margin: 0.625rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+main .grids-2 .borde-7 {
+  border: 2px solid;
+  margin: 0.625rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+main .grids-2 .borde-8 {
+  border: 2px solid;
+  margin: 0.625rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+main .grids-2 .cajaPreguntas {
+  font-size: 3.125rem;
+  color: black;
+  font-family: "Poppins", cursive sans-serif;
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+main .grids-2 .formulario {
+  border: 2px solid;
+  background-color: rgb(244, 244, 194);
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 10;
+  grid-row-end: 12;
+}
+main .contenedorHombre a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", cursive sans-serif;
+  border: 0.125rem solid black;
+  background-color: black;
+}
+main .contenedorHombre a button {
+  filter: sepia(1);
+  height: 12.5rem;
+  background-image: url("../assets/img/parker-burchfield-tvG4WvjgsEY-unsplash.jpg");
+  width: 99%;
+  background-size: contain;
+  margin: 0.625rem;
+}
+main .contenedorHombre a button :hover {
+  filter: sepia(0);
+}
+main .contenedorMujer a {
+  text-decoration: none;
+  color: white;
+  border: 0.125rem solid black;
+  background-color: black;
+}
+main .contenedorMujer a button {
+  height: 12.5rem;
+  background-image: url("../assets/img/cam-morin-knKm7u_7Ihw-unsplash.jpg");
+  width: 99%;
+  background-size: contain;
+  margin: 0.625rem;
+  filter: sepia(1);
+}
+main .contenedorMujer a button:hover {
+  filter: sepia(0);
+}
+main .contendorNiño a {
+  text-decoration: none;
+  color: white;
+  border: 0.125rem solid black;
+  background-color: black;
+}
+main .contendorNiño a button {
+  background-image: url("../assets/img/signature-june-v5jTUTeuc1c-unsplash.jpg");
+  width: 99%;
+  background-size: contain;
+  height: 12.5rem;
+  margin: 0.625rem;
+  filter: sepia(1);
+}
+main .contendorNiño a button button:hover {
+  filter: sepia(0);
+}
+main .conteiner-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 100px;
+  overflow: hidden;
+}
+main .conteiner-cards .cards {
+  padding-top: 0.0625rem;
+  background-color: rgba(240, 248, 255, 0.382);
+  width: 15rem;
+  height: 26.25rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 0.625rem rgba(255, 255, 255, 0.845);
+  margin-bottom: 0.625rem;
+  margin-right: 0.625rem;
+  text-align: center;
+}
+main .conteiner-cards .cards img {
+  width: 100%;
+}
+main .conteiner-cards .card-2 {
+  background-color: bisque;
+}
+main .conteiner-cards .card-3 {
+  background-color: aquamarine;
+}
+
+footer {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(231, 217, 136);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100px;
+}
 
 /*# sourceMappingURL=style.css.map */

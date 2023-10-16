@@ -1,0 +1,31 @@
+
+
+/*variables*/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+
+
+
+
+
+/*carpeta base*/
+@import "./reset";
+
+/*layaout*/
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+/*elementos de componentes*/
+
+
+/*mediaQ*/
+@import "./layout/mediaQ/media320";
+@import "./layout/mediaQ/media375";
+@import "./layout/mediaQ/media435";
+@import "./layout/mediaQ/media768";
+@import "./layout/mediaQ/media1024";
+
+
+
