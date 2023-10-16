@@ -1,0 +1,446 @@
+/* 
+TIPOGRAFIAS
+familia de fuentes: 'Josefin Sans', sans-serif;
+familia de fuentes: 'Mukta', sans-serif;
+familia de fuentes: 'Poppins', sans-serif;
+
+*/
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+/*HEADER*/
+header {
+    background-color:rgb(231, 217, 136);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+    align-items: flex-end;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+header h1 {
+    text-align:center;
+    color: black;
+    font-family:'Poppins', sans-serif;
+    font-size: 3.125rem;
+}
+.navBar {
+    list-style: none;
+    text-align: right;
+    display: flex;
+}
+.navBar li a {
+    font-family:'Poppins', sans-serif ;
+    text-decoration: none;
+    color: black;
+    margin-right: .9375rem;
+    font-size: 1.25rem;
+}
+.navBar li a:hover{
+    color: white;
+}
+.logo{
+    width: 6.25rem;
+}
+.logo img{
+    width: 100%;
+}
+
+/*HEADER*/
+
+/*MAIN*/
+main {
+background-color: #eaf1addb;
+width: 100%;
+height: 100%;
+}
+main h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.875rem;
+}
+
+.botonWhats{  /* BOTONES DE WHATSAPP E INSTAGRAM */
+    box-shadow: .3125rem .3125rem .625rem green;
+    position: fixed;
+    right: 0rem;
+    bottom: .625rem;
+}
+.igBoton{
+    box-shadow: .3125rem .3125rem .625rem violet;
+    position: fixed;
+    left: 0rem;
+    bottom: .625rem;
+}
+
+
+
+
+/*CONOCENOS GRIDS*/
+
+.grids{
+    padding-bottom: .125rem;
+    padding-top: .125rem;
+    display: grid;
+    width: 100%;
+    height: 43.75rem;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows: 1fr 1fr 0fr;
+    grid-template-areas: 
+    "section-1 section-2 section-2 section-2 section-2 section-2"
+    "section-1 section-2 section-2 section-2 section-2 section-2"
+    "section-1 section-3 section-3 section-3 section-3 section-3" ;
+    /*justify-items: center; elementos horizontal*/
+    /* align-items: center; elementos vertical*/
+    column-gap: .9375rem; 
+}
+
+.section-1{
+    background-color:  #eaf1addb;
+    grid-area: section-1;
+    gap: .3125rem;
+
+}
+.section-1 img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.letra{
+    text-decoration: solid;
+    font-size: .9375rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-2{
+    background-color: #eaf1addb;
+    grid-area: section-2;
+    width: 100%;
+    height: 100%;
+}
+.section-2 h2{
+    font-family:'Poppins', sans-serif ;
+}
+.formasPago{
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-3{
+    background-color: #eaf1addb;
+    grid-area:section-3;
+    width: 100%;
+}
+.section-3 h2{
+    font-family: 'Poppins', sans-serif;
+}
+.section-3 h2 div{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* CONSULTAS EJ DE PREGUNTAS */
+.grids-2{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+.borde{ 
+    border: 2px solid;
+    margin: .625rem;
+    border-radius: .625rem;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end:9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.borde h2 p{
+    color:black;
+    font-family: 'Poppins',sans-serif;
+    text-align: left;
+}
+
+
+.borde-2{
+    border: 2px solid;
+    margin: .625rem;
+    border-radius: .625rem;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.borde-3{
+    border: 2px solid;
+    margin: .625rem;
+    border-radius: .625rem;
+    background-color: white;
+    grid-column-start:1;
+    grid-column-end:9;
+    grid-row-start:4;
+    grid-row-end:5;
+}
+.borde-4{
+    border: 2px solid;
+    margin: .625rem;
+    border-radius: .625rem;
+    background-color: white;
+    grid-column-start:1;
+    grid-column-end:9;
+    grid-row-start:5;
+    grid-row-end:6; 
+}
+.borde-5{
+    border: 2px solid;
+    margin: .625rem;
+    border-radius: .625rem;
+    background-color: white;
+    grid-column-start:1;
+    grid-column-end:9;
+    grid-row-start:6;
+    grid-row-end:7;
+}
+.borde-6{
+    border: 2px solid;
+    margin: .625rem;
+    border-radius: .625rem;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+.borde-7{
+    border: 2px solid;
+    margin: .625rem;
+    border-radius: .625rem;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+.borde-8{
+    border: 2px solid;
+    margin: .625rem;
+    border-radius: .625rem;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+
+.cajaPreguntas{
+    font-size: 3.125rem;
+    color: black;
+    font-family: 'Poppins',cursive sans-serif;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.formulario{
+    border: 2px solid;
+    background-color:rgb(244, 244, 194);
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 10;
+    grid-row-end: 12;
+
+}
+
+
+
+
+
+
+
+
+/*ROPA*/
+.contenedorHombre a{
+    text-decoration: none;
+    color: white;
+    font-family:'Poppins',cursive sans-serif;
+    border: .125rem solid black;
+    background-color: black;
+}
+.contenedorHombre button{
+    filter: sepia(1);
+    height: 12.5rem;
+    background-image:url("../assets/img/parker-burchfield-tvG4WvjgsEY-unsplash.jpg");
+    width: 99%;
+    background-size: contain;
+    margin: .625rem
+}
+.contenedorHombre button:hover{
+    filter: sepia(0);
+}
+
+
+.contenedorMujer a{
+    text-decoration: none;
+    color: white;
+    border: .125rem solid black;
+    background-color: black;
+}
+.contenedorMujer button{
+    height: 12.5rem;
+    background-image:url("../assets/img/cam-morin-knKm7u_7Ihw-unsplash.jpg");
+    width: 99%;
+    background-size: contain;
+    margin: .625rem;
+    filter: sepia(1);
+}
+.contenedorMujer button:hover{
+    filter: sepia(0);
+}
+
+
+.contenedorNiño a{
+    text-decoration: none;
+    color:white;
+    border: .125rem solid black;
+    background-color: black;
+}
+.contenedorNiño button{
+    background-image: url("../assets/img/signature-june-v5jTUTeuc1c-unsplash.jpg");
+    width: 99%;
+    background-size: contain;
+    height: 12.5rem;
+    margin: .625rem;
+    filter: sepia(1);
+}
+.contenedorNiño button:hover{
+    filter: sepia(0);
+}
+
+
+
+.container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100px;
+    overflow: hidden;
+}
+.cards{
+    padding-top: .0625rem;
+    background-color: rgba(240, 248, 255, 0.382);
+    width: 15rem;
+    height: 26.25rem;
+    border-radius: .625rem;
+    overflow: hidden;
+    box-shadow: 2px 2px .625rem rgba(255, 255, 255, 0.845);
+    margin-bottom: .625rem;
+    margin-right: .625rem;
+    text-align: center;
+}
+.card-2{
+    background-color: bisque;
+}
+.card-3{
+    background-color: aquamarine;
+}
+.cards img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*MAIN*/
+
+
+
+
+
+
+/*FOOTER*/
+footer{
+    font-family:'Poppins',sans-serif; 
+    background-color:rgb(231, 217, 136);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+}
+/*FOOTER*/
+
+
+
+
+
+/*RESPONSIVE*/
+
+@media (max-width:1024px) {
+    header h1{
+        display: none;        
+    }
+    .cajaPreguntas{
+        font-size: 1.875rem;
+    }
+}
+
+@media (max-width:768px){
+
+}
+
+@media (max-width: 425px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .625rem;
+    }
+    .formulario{
+        grid-column-end:5;
+    }
+}
+
+@media (max-width: 375px){
+
+}
+
+@media (max-width: 320px){
+    main{
+        height: 53.125rem;
+    }
+    footer{
+        gap: .625rem;
+    }
+    main{
+        width: 100%;
+    }
+    .formulario{
+        grid-row-end: 11;
+    }
+}            
+
