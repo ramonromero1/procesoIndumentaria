@@ -1,0 +1,49 @@
+@media (max-width: 320px){
+    header{
+        height: 3.125rem;
+    }
+
+    .logo{
+        display: none;
+
+    }
+    footer{
+        gap: .625rem;
+    }
+
+    .formulario{
+        grid-row-end: 11;
+    }
+    .container-cards{
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+        gap: .625rem;
+        align-items: center;
+    }
+    .cards{
+        height: 15%;
+        width: 6.25rem;
+    }
+    .cards img{
+        width: 100%;
+       height: 50%;
+    }
+    .prueba{
+        width: 4.375rem;
+    }
+    .contenedorAcordeon{
+        width: 4.375rem;
+        height: 12.5rem;
+    }
+    .acordeon{
+        width: 100%;
+        max-height: 0%;
+    }
+    .btn-acordeon{
+        height: 2.5rem;
+    }
+    .contenido-acordeon{
+        height: .625rem;
+    }
+}        

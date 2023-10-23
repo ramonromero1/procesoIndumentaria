@@ -10,7 +10,7 @@ header{
         text-align:center;
         color: $color-principal;
         font-family:'Poppins', sans-serif;
-        font-size: 3.125rem;
+        font-size: map-get($map: font-size, $key:xl );
     }
     .navBar{
         list-style: none;
@@ -21,7 +21,7 @@ header{
             text-decoration: none;
             color:$color-principal;
             margin-right: .9375rem;
-            font-size: 1.25rem;
+            font-size: map-get($map: font-size, $key:md );
             &:hover{
                 color: white;
             }

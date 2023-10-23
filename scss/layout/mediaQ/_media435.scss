@@ -1,0 +1,19 @@
+@media (max-width: 425px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .625rem;
+    }
+    .logo{
+        margin-right: 1.875rem;
+    }
+
+    .formulario{
+        grid-column-end:5;
+    }
+    .prueba{
+        width: 6.25rem;
+        padding-top: 3.125rem;
+    }
+}

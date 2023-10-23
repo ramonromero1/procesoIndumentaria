@@ -54,6 +54,7 @@ header h1 {
 }
 .navBar li a:hover{
     color: white;
+    transition:text-decoration 3s, color 2s;
 }
 .logo{
     width: 6.25rem;
@@ -77,13 +78,11 @@ main h1 {
 }
 
 .botonWhats{  /* BOTONES DE WHATSAPP E INSTAGRAM */
-    box-shadow: .3125rem .3125rem .625rem green;
     position: fixed;
     right: 0rem;
     bottom: .625rem;
 }
 .igBoton{
-    box-shadow: .3125rem .3125rem .625rem violet;
     position: fixed;
     left: 0rem;
     bottom: .625rem;
@@ -122,7 +121,7 @@ main h1 {
     height: 70%;
     object-fit: cover;
 }
-.letra{
+.presentacion{
     text-decoration: solid;
     font-size: .9375rem;
     font-family: 'Poppins', sans-serif;
@@ -134,6 +133,7 @@ main h1 {
     width: 100%;
     height: 100%;
 }
+
 .section-2 h2{
     font-family:'Poppins', sans-serif ;
 }
@@ -156,119 +156,59 @@ main h1 {
 
 
 /* CONSULTAS EJ DE PREGUNTAS */
-.grids-2{
-    display: grid;
+.contenedorAcordeon{
     width: 100%;
+    max-width: 50rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: .3125rem;
     height: 100%;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(12,1fr);
 }
-.borde{ 
-    border: 2px solid;
-    margin: .625rem;
-    border-radius: .625rem;
-    background-color: white;
-    grid-column-start: 1;
-    grid-column-end:9;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.borde h2 p{
+.contenedorAcordeon h1{
     color:black;
     font-family: 'Poppins',sans-serif;
     text-align: left;
 }
+.acordeon{ 
+    border: 2px solid;
+    margin: .625rem;
+    border-radius: .625rem;
+    background-color: white;
 
-
-.borde-2{
-    border: 2px solid;
-    margin: .625rem;
-    border-radius: .625rem;
-    background-color: white;
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 3;
-    grid-row-end: 4;
 }
-.borde-3{
-    border: 2px solid;
-    margin: .625rem;
-    border-radius: .625rem;
-    background-color: white;
-    grid-column-start:1;
-    grid-column-end:9;
-    grid-row-start:4;
-    grid-row-end:5;
-}
-.borde-4{
-    border: 2px solid;
-    margin: .625rem;
-    border-radius: .625rem;
-    background-color: white;
-    grid-column-start:1;
-    grid-column-end:9;
-    grid-row-start:5;
-    grid-row-end:6; 
-}
-.borde-5{
-    border: 2px solid;
-    margin: .625rem;
-    border-radius: .625rem;
-    background-color: white;
-    grid-column-start:1;
-    grid-column-end:9;
-    grid-row-start:6;
-    grid-row-end:7;
-}
-.borde-6{
-    border: 2px solid;
-    margin: .625rem;
-    border-radius: .625rem;
-    background-color: white;
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 7;
-    grid-row-end: 8;
-}
-.borde-7{
-    border: 2px solid;
-    margin: .625rem;
-    border-radius: .625rem;
-    background-color: white;
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 8;
-    grid-row-end: 9;
-}
-.borde-8{
-    border: 2px solid;
-    margin: .625rem;
-    border-radius: .625rem;
-    background-color: white;
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 9;
-    grid-row-end: 10;
-}
-
-
-.cajaPreguntas{
-    font-size: 3.125rem;
+.acordeon label{
+    display: block;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    background: beige;
     color: black;
-    font-family: 'Poppins',cursive sans-serif;
-    grid-column-start: 4;
-    grid-column-end: 6;
+    cursor: pointer;
+    margin-bottom: .125rem;
+    transition: all 300ms ease;
 }
+.acordeon label:hover{
+    background-color: blanchedalmond;
+}
+.acordeon .contenido-acordeon{
+    padding: 0rem;
+    margin: 0px .625rem;
+    max-height: 0rem;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 37.5rem;
+    padding: .625rem 0rem;
+}
+.btn-acordeon{
+    display: none;
+}
+
+
 
 .formulario{
     border: 2px solid;
     background-color:rgb(244, 244, 194);
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 10;
-    grid-row-end: 12;
-
 }
 
 
@@ -296,6 +236,7 @@ main h1 {
 }
 .contenedorHombre button:hover{
     filter: sepia(0);
+    
 }
 
 
@@ -404,13 +345,27 @@ footer{
     header h1{
         display: none;        
     }
-    .cajaPreguntas{
-        font-size: 1.875rem;
+
+    .section-1{
+        display: none;
+    }
+    .section-2{
+        grid-column-start: 1;
+        width: 100%;
+        margin: 0;
+    }
+    .prueba{
+        width: 15.625rem;
+    }
+    .section-3{
+        grid-column-start: 1;
     }
 }
 
 @media (max-width:768px){
-
+    .prueba{
+        width: 11.25rem;
+    }
 }
 
 @media (max-width: 425px){
@@ -420,43 +375,72 @@ footer{
         justify-content: center;
         gap: .625rem;
     }
+    .logo{
+        margin-right: 1.875rem;
+    }
+
     .formulario{
         grid-column-end:5;
+    }
+    .prueba{
+        width: 6.25rem;
+        padding-top: 3.125rem;
     }
 }
 
 @media (max-width: 375px){
-
+    .prueba{
+        width: 5.625rem;
+    }
 }
 
 @media (max-width: 320px){
-    main{
-        height: 53.125rem;
-        
+    header{
+        height: 3.125rem;
+    }
+
+    .logo{
+        display: none;
+
     }
     footer{
         gap: .625rem;
-    }
-    main{
-        width: 100%;
     }
     .formulario{
         grid-row-end: 11;
     }
     .container-cards{
         flex-wrap: wrap;
-        height: 7.5rem;
+        height: 100%;
         width: 100%;
         gap: .625rem;
         align-items: center;
     }
     .cards{
-        height: 100%;
+        height: 15%;
         width: 6.25rem;
     }
     .cards img{
         width: 100%;
-        height: 60%;
+       height: 50%;
     }
+    .prueba{
+        width: 4.375rem;
+    }
+    .contenedorAcordeon{
+        width: 4.375rem;
+        height: 12.5rem;
+    }
+    .acordeon{
+        width: 100%;
+        max-height: 0%;
+    }
+    .btn-acordeon{
+        height: 2.5rem;
+    }
+    .contenido-acordeon{
+        height: .625rem;
+    }
+
 }            
 

@@ -1,0 +1,22 @@
+@media (max-width:1024px) {
+    header h1{
+        display: none;        
+    }
+    .cajaPreguntas{
+        font-size: 1.875rem;
+    }
+    .section-1{
+        display: none;
+    }
+    .section-2{
+        grid-column-start: 1;
+        width: 100%;
+        margin: 0;
+    }
+    .prueba{
+        width: 15.625rem;
+    }
+    .section-3{
+        grid-column-start: 1;
+    }
+}

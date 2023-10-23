@@ -5,172 +5,8 @@ main{
     h1{
         font-family: 'Poppins', sans-serif;
         text-align: center;
-        font-size: 1.875rem;
+        font-size: map-get($map: font-size, $key:md );
     } 
-    .botonWhats{
-        box-shadow: .3125rem .3125rem .625rem green;
-        position: fixed;
-        right: 0rem;
-        bottom: .625rem;
-    }
-    .igBoton{
-        box-shadow: .3125rem .3125rem .625rem violet;
-        position: fixed;
-        left: 0rem;
-        bottom: .625rem;
-    }
-    .grids{
-        padding-bottom: .125rem;
-        padding-top: .125rem;
-        width: 100%;
-        height: 43.75rem;
-        @include grids;
-        .section-1{
-            background-color: $bg-principal;
-            grid-area: section-1;
-            gap: .3125rem;
-             img{
-                width: 100%;
-                height: 70%;
-                object-fit: cover;
-            }
-        }
-        .letra{
-            text-decoration: solid;
-            font-size: .9375rem;
-            font-family: 'Poppins', sans-serif;
-        }
-        .section-2{
-            background-color: $bg-principal;
-            grid-area: section-2;
-            width: 100%;
-            height: 100%;
-            h2{
-               font-family:'Poppins', sans-serif;
-            }
-        }
-        .formasPago{
-            font-family: 'Poppins', sans-serif;
-        }
-        .section-3{
-            background-color:$bg-principal;
-            grid-area:section-3;
-            width: 100%; 
-            h2{
-                font-family: 'Poppins', sans-serif;
-                div{
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
-    }
-    .grids-2{
-         display: grid;
-         width: 100%;
-         height: 100%;
-         @include grids2;
-        .border{
-            border: 2px solid;
-            margin: .625rem;
-            border-radius: .625rem;
-            background-color: white;
-            grid-column-start: 1;
-            grid-column-end:9;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            h2 p{       
-                color:black;
-               font-family: 'Poppins',sans-serif;
-                text-align: left;
-            }
-        }
-        .borde-2{
-            border: 2px solid;
-            margin: .625rem;
-            border-radius: .625rem;
-            background-color: white;
-            grid-column-start: 1;
-            grid-column-end: 9;
-            grid-row-start: 3;
-            grid-row-end: 4;
-        }
-        .borde-3{
-            border: 2px solid;
-            margin: .625rem;
-            border-radius: .625rem;
-            background-color: white;
-            grid-column-start:1;
-            grid-column-end:9;
-            grid-row-start:4;
-            grid-row-end:5;
-        }
-        .borde-4{
-            border: 2px solid;
-            margin: .625rem;
-            border-radius: .625rem;
-            background-color: white;
-            grid-column-start:1;
-            grid-column-end:9;
-            grid-row-start:5;
-            grid-row-end:6;        
-        }
-        .borde-5{
-            border: 2px solid;
-            margin: .625rem;
-            border-radius: .625rem;
-            background-color: white;
-            grid-column-start:1;
-            grid-column-end:9;
-            grid-row-start:6;
-            grid-row-end:7;        
-        }
-        .borde-6{
-            border: 2px solid;
-            margin: .625rem;
-            border-radius: .625rem;
-            background-color: white;
-            grid-column-start: 1;
-            grid-column-end: 9;
-            grid-row-start: 7;
-            grid-row-end: 8;
-        }
-        .borde-7{
-            border: 2px solid;
-            margin: .625rem;
-            border-radius: .625rem;
-            background-color: white;
-            grid-column-start: 1;
-            grid-column-end: 9;
-            grid-row-start: 8;
-            grid-row-end: 9;        
-        }
-        .borde-8{
-            border: 2px solid;
-            margin: .625rem;
-            border-radius: .625rem;
-            background-color: white;
-            grid-column-start: 1;
-            grid-column-end: 9;
-            grid-row-start: 9;
-            grid-row-end: 10;
-        }
-        .cajaPreguntas{
-            font-size: 3.125rem;
-            color:$color-principal;
-            font-family: 'Poppins',cursive sans-serif;
-            grid-column-start: 4;
-            grid-column-end: 6;
-        }
-        .formulario{
-            border: 2px solid;
-            background-color:rgb(244, 244, 194);
-            grid-column-start: 4;
-            grid-column-end: 6;
-            grid-row-start: 10;
-            grid-row-end: 12;
-        }
-    }
     .contenedorHombre a{
         text-decoration: none;
         color: white;
@@ -250,6 +86,116 @@ main{
         .card-3{
             background-color: aquamarine;
         }
+    }
+ .botonWhats{
+        position: fixed;
+        right: 0rem;
+        bottom: .625rem;
+    }
+    .igBoton{
+        position: fixed;
+        left: 0rem;
+        bottom: .625rem;
+    }
+    .grids{
+        padding-bottom: .125rem;
+        padding-top: .125rem;
+        width: 100%;
+        height: 43.75rem;
+        @include grids;
+        .section-1{
+            background-color: $bg-principal;
+            grid-area: section-1;
+            gap: .3125rem;
+             img{
+                width: 100%;
+                height: 70%;
+                object-fit: cover;
+            }
+        }
+        .letra{
+            text-decoration: solid;
+            font-size: map-get($map: font-size, $key:sm );
+            font-family: 'Poppins', sans-serif;
+        }
+        .section-2{
+            background-color: $bg-principal;
+            grid-area: section-2;
+            width: 100%;
+            height: 100%;
+            h2{
+               font-family:'Poppins', sans-serif;
+            }
+        }
+        .formasPago{
+            font-family: 'Poppins', sans-serif;
+        }
+        .section-3{
+            background-color:$bg-principal;
+            grid-area:section-3;
+            width: 100%; 
+            h2{
+                font-family: 'Poppins', sans-serif;
+                div{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .contenedorAcordeon{
+        width: 100%;
+        max-width: 50rem;
+        margin: auto;
+        margin-top: 5rem;
+        margin-bottom: .3125rem;
+        height: 100%;
+        h1{
+            color:black;
+            font-family: 'Poppins',sans-serif;
+            text-align: left;
+        }
+        .acordeon{ 
+            border: 2px solid;
+            margin: .625rem;
+            border-radius: .625rem;
+            background-color: white;
+            label{
+                display: block;
+                padding: 1.25rem;
+                font-size: map-get($map: font-size, $key:md );
+                background: beige;
+                color: black;
+                cursor: pointer;
+                margin-bottom: .125rem;
+                transition: all 300ms ease;
+            }
+            & label:hover{
+                background-color: blanchedalmond;
+            }
+            .contenido-acordeon{
+                padding: 0rem;
+                margin: 0px .625rem;
+                max-height: 0rem;
+                overflow: hidden;
+                transition: all 300ms ease;
+            }
+        }.btn-acordeon:checked ~ .contenido-acordeon{
+            max-height: 37.5rem;
+            padding: .625rem 0rem;
+        }
+        .btn-acordeon{
+            display: none;
+        }
+        .formulario{
+            border: 2px solid;
+            background-color:rgb(244, 244, 194);
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 10;
+            grid-row-end: 12;
+        
+        } 
     }
 }
 footer{
