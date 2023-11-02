@@ -19,7 +19,9 @@ familia de fuentes: 'Poppins', sans-serif;
 
 
 
-
+body{
+    overflow: hidden;
+}
 
 
 /*HEADER*/
